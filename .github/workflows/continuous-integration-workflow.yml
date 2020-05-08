@@ -1,0 +1,46 @@
+name: Tests
+on:
+  - pull_request
+  - push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: pip cache
+        uses: actions/cache@v1
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/.pre-commit-config.yaml') }}
+      - name: pre-commit cache
+        uses: actions/cache@v1
+        with:
+          path: ~/.cache/pre-commit
+          key: ${{ runner.os }}-pre-commit-${{ hashFiles('**/.pre-commit-config.yaml') }}
+
+      - name: pre-commit set up
+        run: |
+          PATH=~/.local/bin:$PATH
+          pip3 install setuptools wheel
+          pip3 install pre-commit
+          pre-commit install-hooks
+      - name: pre-commit set up log
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: log
+          path: ~/.cache/pre-commit/pre-commit.log
+          
+      - name: pre-commit run
+        run: |
+          PATH=~/.local/bin:$PATH
+          pre-commit run --all-files --color=always
+      - name: pre-commit run log
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: log
+          path: ~/.cache/pre-commit/pre-commit.log

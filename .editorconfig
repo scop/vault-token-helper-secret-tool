@@ -1,0 +1,10 @@
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+
+[vault-token-helper-secret-tool]
+indent_size = 8
+indent_style = tab
+# shfmt
+switch_case_indent = true
