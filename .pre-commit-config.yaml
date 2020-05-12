@@ -1,6 +1,5 @@
 repos:
-  - repo: https://github.com/scop/pre-commit-shfmt-workaround
-    rev: v0
+  - repo: local
     hooks:
       - id: shfmt
         name: shfmt
@@ -9,6 +8,7 @@ repos:
         entry: shfmt
         args: [-w, -s]
         types: [shell]
+        minimum_pre_commit_version: 2.4.0
   - repo: https://github.com/ryanrhee/shellcheck-py
     rev: v0.7.1.1
     hooks:

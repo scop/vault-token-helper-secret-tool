@@ -25,7 +25,7 @@ jobs:
         run: |
           PATH=~/.local/bin:$PATH
           pip3 install setuptools wheel
-          pip3 install pre-commit
+          pip3 install "pre-commit>=2.4.0"
           pre-commit install-hooks
       - name: pre-commit set up log
         uses: actions/upload-artifact@v2
