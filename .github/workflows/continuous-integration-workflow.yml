@@ -11,12 +11,12 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: pip cache
-        uses: actions/cache@v1
+        uses: actions/cache@v2.1.1
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/.pre-commit-config.yaml') }}
       - name: pre-commit cache
-        uses: actions/cache@v1
+        uses: actions/cache@v2.1.1
         with:
           path: ~/.cache/pre-commit
           key: ${{ runner.os }}-pre-commit-${{ hashFiles('**/.pre-commit-config.yaml') }}
