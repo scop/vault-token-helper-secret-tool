@@ -1,6 +1,7 @@
 # vault-token-helper-secret-tool [![Tests](https://github.com/scop/vault-token-helper-secret-tool/workflows/Tests/badge.svg)](https://github.com/scop/vault-token-helper-secret-tool/actions?query=workflow%3ATests)
 
-A [HashiCorp Vault](https://www.vaultproject.io/) token helper in a
+A [HashiCorp Vault](https://www.vaultproject.io/) [token
+helper](https://www.vaultproject.io/docs/commands/token-helper) in a
 few lines of POSIX shell code, using
 [libsecret's](https://wiki.gnome.org/Projects/Libsecret)
 `secret-tool`.
