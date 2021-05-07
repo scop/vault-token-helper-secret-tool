@@ -27,6 +27,14 @@ changing context, or use multiple configs (with uniquely named helper
 in each of them) and use the `VAULT_CONFIG_PATH` to choose between
 them.
 
+## Alternatives, credits
+
+Inspired by
+[joemiller/vault-token-helper](https://github.com/joemiller/vault-token-helper),
+but much smaller and simpler. For something more elaborate than this
+one, as well as for support for other store backends besides what
+libsecret works with, that'd be one alternative to look into.
+
 ## License
 
 SPDX-License-Identifier: Apache-2.0
