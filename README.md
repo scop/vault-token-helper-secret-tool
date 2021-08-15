@@ -1,4 +1,4 @@
-# vault-token-helper-secret-tool [![Tests](https://github.com/scop/vault-token-helper-secret-tool/workflows/Tests/badge.svg)](https://github.com/scop/vault-token-helper-secret-tool/actions?query=workflow%3ATests)
+# vault-token-helper-secret-tool [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/scop/vault-token-helper-secret-tool/master.svg)](https://results.pre-commit.ci/latest/github/scop/vault-token-helper-secret-tool/master)
 
 A [HashiCorp Vault](https://www.vaultproject.io/) [token
 helper](https://www.vaultproject.io/docs/commands/token-helper) in a
