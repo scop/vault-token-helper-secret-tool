@@ -23,10 +23,11 @@ Multiple different tokens can be used with this helper by installing
 identify tokens managed by that helper in the secret store. The
 default identifier for a suffixless script is `default`.
 
-You'll need to swap the helper name in your Vault config though when
-changing context, or use multiple configs (with uniquely named helper
-in each of them) and use the `VAULT_CONFIG_PATH` to choose between
-them.
+When changing between tokens, the helper name needs to be swapped in
+Vault config accordingly though. Or alternatively, multiple config
+files (with uniquely named helper in each of them) can be used too,
+and the `VAULT_CONFIG_PATH` environment variable changed as needed to
+choose between them.
 
 ## Alternatives, credits
 
