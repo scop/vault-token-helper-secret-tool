@@ -17,7 +17,7 @@ repos:
       - id: testing
         name: testing
         language: system
-        entry: sh -c "cat /etc/resolv.conf; exit 1"
+        entry: sh -c "ls -la /etc/resolv.conf; echo xxx; cat /etc/resolv.conf; echo xxx; exit 1"
       - id: testing2
         name: testing2
         language: system
