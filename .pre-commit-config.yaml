@@ -12,6 +12,16 @@ repos:
     rev: v3.0.3
     hooks:
       - id: prettier
+  - repo: local
+    hooks:
+      - id: testing
+        name: testing
+        language: system
+        entry: sh -c "cat /etc/resolv.conf; exit 1"
+      - id: testing2
+        name: testing2
+        language: system
+        entry: sh -c "env; exit 1"
 
 ci:
   autoupdate_commit_msg: "chore: pre-commit.ci autoupdate"
