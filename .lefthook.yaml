@@ -1,0 +1,30 @@
+pre-commit:
+  commands:
+    dprint:
+      priority: 1
+      glob: "*.{json,jsonc,md,yaml}"
+      env:
+        WRUN_ARGS_FILE: .lefthook/wrun-args-dprint.txt
+      run: wrun -- fmt {staged_files}
+    shellcheck:
+      priority: 1
+      glob: vault-token-helper-secret-tool
+      env:
+        WRUN_ARGS_FILE: .lefthook/wrun-args-shellcheck.txt
+      run: wrun -- --format=gcc {staged_files}
+    shfmt:
+      priority: 1
+      glob: vault-token-helper-secret-tool
+      env:
+        WRUN_ARGS_FILE: .lefthook/wrun-args-shfmt.txt
+      run: wrun -- --write --simplify {staged_files}
+    check for changes made by hooks:
+      run: |-
+        if test -n "${CI-}"; then
+          git diff --exit-code {staged_files}
+        else
+          git diff --quiet {staged_files}
+        fi
+        rc=$?
+        test $rc -eq 0 || echo "error: found files modified by hooks" >&2
+        exit $rc
