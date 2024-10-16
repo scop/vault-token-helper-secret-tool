@@ -28,3 +28,17 @@ pre-commit:
         rc=$?
         test $rc -eq 0 || echo "error: found files modified by hooks" >&2
         exit $rc
+
+update-tools:
+  commands:
+    dprint:
+      priority: 1
+      run: wrun generate github dprint >.lefthook/wrun-args-dprint.txt
+    dprint-plugins:
+      env:
+        WRUN_ARGS_FILE: .lefthook/wrun-args-dprint.txt
+      run: wrun -- config update
+    shellcheck:
+      run: wrun generate shellcheck >.lefthook/wrun-args-shellcheck.txt
+    shfmt:
+      run: wrun generate github mvdan sh --tool shfmt >.lefthook/wrun-args-shfmt.txt
