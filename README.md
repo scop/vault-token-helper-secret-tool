@@ -1,4 +1,4 @@
-# vault-token-helper-secret-tool [![CI status](https://github.com/scop/vault-token-helper-secret-tool/workflows/check/badge.svg)](https://github.com/scop/vault-token-helper-secret-tool/actions?query=workflow%3Acheck)
+# vault-token-helper-secret-tool [![CI status](https://github.com/scop/vault-token-helper-secret-tool/actions/workflows/check.yaml/badge.svg)](https://github.com/scop/vault-token-helper-secret-tool/actions/workflows/check.yaml)
 
 A [HashiCorp Vault](https://www.vaultproject.io/) [token helper](https://www.vaultproject.io/docs/commands/token-helper) in a
 few lines of POSIX shell code, using
