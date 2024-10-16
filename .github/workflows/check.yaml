@@ -1,0 +1,23 @@
+name: Main push and PR checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # No caching as we're expected to run rarely
+      - name: Install dependencies and run checks
+        env:
+          FORCE_COLOR: true
+          LEFTHOOK_QUIET: meta,execution
+          WRUN_VERBOSE: true
+        run: |
+          set -euxo pipefail
+          python3 -m pip install --no-cache-dir wrun-py
+          npm exec --yes -- lefthook run pre-commit --all-files --force --no-tty
