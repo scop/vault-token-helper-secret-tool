@@ -1,8 +1,9 @@
-name: Check updates to tools, file pull requests
+name: Tooling updates
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: "11 21 * * *"
+    - cron: "42 0 * * 6"
 
 jobs:
   update-tools:
