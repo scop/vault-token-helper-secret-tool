@@ -1,0 +1,26 @@
+name: Check updates to tools, file pull requests
+
+on:
+  schedule:
+    - cron: "11 21 * * *"
+
+jobs:
+  update-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v4.2.1
+      - name: Check for and prepare updates
+        env:
+          FORCE_COLOR: true
+          LEFTHOOK_QUIET: meta,execution
+          WRUN_VERBOSE: true
+        run: |
+          set -euxo pipefail
+          python3 -m pip install --no-cache-dir wrun-py
+          npm exec --yes -- lefthook run update-tools
+      - uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f # v7.0.5
+        with:
+          token: ${{ secrets.MACHINE_USER_PAT }}
+          push-to-fork: bot-scop/vault-token-helper-secret-tool
+          commit-message: "chore: automated tools update"
+          title: "chore: tooling updates"
