@@ -21,7 +21,7 @@ jobs:
           npm exec --yes -- lefthook run update-tools
       - uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f # v7.0.5
         with:
-          token: ${{ secrets.MACHINE_USER_PAT }}
-          push-to-fork: bot-scop/vault-token-helper-secret-tool
+          token: ${{ secrets.TOOLS_UPDATE_TOKEN }}
+          push-to-fork: bot-${{ github.repository }}
           commit-message: "chore: automated tools update"
           title: "chore: tooling updates"
