@@ -1,6 +1,6 @@
---url=darwin/amd64=https://github.com/dprint/dprint/releases/download/0.47.5/dprint-x86_64-apple-darwin.zip#sha256-f1284d78a556d530241e382915263484f590418f12dd7608ecc7dd0c8f78615c
---url=darwin/arm64=https://github.com/dprint/dprint/releases/download/0.47.5/dprint-aarch64-apple-darwin.zip#sha256-5e333931f3cfe43bb8924a1c2c5b3021cbb983294fa020f67858b93689fd805d
---url=linux/amd64=https://github.com/dprint/dprint/releases/download/0.47.5/dprint-x86_64-unknown-linux-musl.zip#sha256-94fb93bb59236efd5302959662d9f3a0b16bb17e26e967052b5c598995e6b516
---url=linux/arm64=https://github.com/dprint/dprint/releases/download/0.47.5/dprint-aarch64-unknown-linux-musl.zip#sha256-97c2a0f4f240e5b95faff1502b8284db7598efe5aee7f785db03e41345f0a335
---url=windows/amd64=https://github.com/dprint/dprint/releases/download/0.47.5/dprint-x86_64-pc-windows-msvc.zip#sha256-561e95d6ffccae1ab99f55c308fa74df3d960d3cb7ebec601fd3ddd503ee42a5
+--url=darwin/amd64=https://github.com/dprint/dprint/releases/download/0.47.6/dprint-x86_64-apple-darwin.zip#sha256-b54950d447e0d17fcc2732bf99928503deb39b5b764e5b33995449bf6059c857
+--url=darwin/arm64=https://github.com/dprint/dprint/releases/download/0.47.6/dprint-aarch64-apple-darwin.zip#sha256-4f33c24141a19638ab045fe5e95654ff0ef8db29949e145d28ea3cc5b088a042
+--url=linux/amd64=https://github.com/dprint/dprint/releases/download/0.47.6/dprint-x86_64-unknown-linux-musl.zip#sha256-ab0cd8c86d224b51371bb0a5c50418376b153a643d024022977e4d72cad529e6
+--url=linux/arm64=https://github.com/dprint/dprint/releases/download/0.47.6/dprint-aarch64-unknown-linux-musl.zip#sha256-221aaecc5e71d73591b226377064a33b4d15a5aae6788ef11c99a4da540a095d
+--url=windows/amd64=https://github.com/dprint/dprint/releases/download/0.47.6/dprint-x86_64-pc-windows-msvc.zip#sha256-0c9abe671652b8da61227b92b0bc038b1e938367fa3d7a9fa3ba523d515d4a9a
 --archive-exe-path=dprint
