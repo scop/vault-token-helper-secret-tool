@@ -1,6 +1,0 @@
---url=darwin/amd64=https://github.com/dprint/dprint/releases/download/0.47.6/dprint-x86_64-apple-darwin.zip#sha256-b54950d447e0d17fcc2732bf99928503deb39b5b764e5b33995449bf6059c857
---url=darwin/arm64=https://github.com/dprint/dprint/releases/download/0.47.6/dprint-aarch64-apple-darwin.zip#sha256-4f33c24141a19638ab045fe5e95654ff0ef8db29949e145d28ea3cc5b088a042
---url=linux/amd64=https://github.com/dprint/dprint/releases/download/0.47.6/dprint-x86_64-unknown-linux-musl.zip#sha256-ab0cd8c86d224b51371bb0a5c50418376b153a643d024022977e4d72cad529e6
---url=linux/arm64=https://github.com/dprint/dprint/releases/download/0.47.6/dprint-aarch64-unknown-linux-musl.zip#sha256-221aaecc5e71d73591b226377064a33b4d15a5aae6788ef11c99a4da540a095d
---url=windows/amd64=https://github.com/dprint/dprint/releases/download/0.47.6/dprint-x86_64-pc-windows-msvc.zip#sha256-0c9abe671652b8da61227b92b0bc038b1e938367fa3d7a9fa3ba523d515d4a9a
---archive-exe-path=dprint
