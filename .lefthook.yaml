@@ -6,21 +6,15 @@ pre-commit:
         jobs:
           - name: dprint
             glob: "*.{json,jsonc,md,yaml}"
-            env:
-              WRUN_ARGS_FILE: .lefthook/wrun-args-dprint.txt
-            run: wrun -- fmt {staged_files}
+            run: mise exec -- dprint fmt {staged_files}
           - name: shell-tools
             glob: vault-token-helper-secret-tool
             group:
               jobs:
                 - name: shfmt
-                  env:
-                    WRUN_ARGS_FILE: .lefthook/wrun-args-shfmt.txt
-                  run: wrun -- --write --simplify {staged_files}
+                  run: mise exec -- shfmt --write --simplify {staged_files}
                 - name: shellcheck
-                  env:
-                    WRUN_ARGS_FILE: .lefthook/wrun-args-shellcheck.txt
-                  run: wrun -- --format=gcc {staged_files}
+                  run: mise exec -- shellcheck --format=gcc {staged_files}
     - name: hook-made-changes
       run: |-
         if test -n "${CI-}"; then
@@ -31,12 +25,3 @@ pre-commit:
         rc=$?
         test $rc -eq 0 || echo "error: found files modified by hooks" >&2
         exit $rc
-
-update-tools:
-  commands:
-    dprint:
-      run: wrun generate github dprint >.lefthook/wrun-args-dprint.txt
-    shellcheck:
-      run: wrun generate shellcheck >.lefthook/wrun-args-shellcheck.txt
-    shfmt:
-      run: wrun generate github mvdan sh --tool shfmt >.lefthook/wrun-args-shfmt.txt
