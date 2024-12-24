@@ -1,6 +1,6 @@
 pre-commit:
   jobs:
-    - name: linters
+    - name: tools
       group:
         parallel: true
         jobs:
@@ -15,7 +15,7 @@ pre-commit:
                   run: mise exec -- shfmt --write --simplify {staged_files}
                 - name: shellcheck
                   run: mise exec -- shellcheck --format=gcc {staged_files}
-    - name: hook-made-changes
+    - name: tool-made-changes
       run: |-
         if test -n "${CI-}"; then
           git diff --exit-code {staged_files}
@@ -23,7 +23,7 @@ pre-commit:
           git diff --quiet {staged_files}
         fi
         rc=$?
-        test $rc -eq 0 || echo "error: found files modified by hooks" >&2
+        test $rc -eq 0 || echo "error: found files modified by tools" >&2
         exit $rc
 
 commit-msg:
