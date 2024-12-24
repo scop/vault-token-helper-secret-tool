@@ -25,3 +25,13 @@ pre-commit:
         rc=$?
         test $rc -eq 0 || echo "error: found files modified by hooks" >&2
         exit $rc
+
+commit-msg:
+  commands:
+    committed:
+      run: mise exec -- committed --config .config/committed.toml --fixup --wip --commit-file "{1}"
+
+commit-msgs-on-pr-branch:
+  commands:
+    committed:
+      run: mise exec -- committed --config .config/committed.toml -vv --no-merge-commit HEAD~..HEAD^2
