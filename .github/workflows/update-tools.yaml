@@ -13,7 +13,7 @@ jobs:
       - uses: jdx/mise-action@249c01ba271e19fa76eede7f766161cc95ace489 # v2.1.10
       - name: Check for and prepare updates
         run: mise upgrade --bump
-      - uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f # v7.0.5
+      - uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7.0.6
         with:
           token: ${{ secrets.TOOLS_UPDATE_TOKEN }}
           push-to-fork: bot-${{ github.repository }}
