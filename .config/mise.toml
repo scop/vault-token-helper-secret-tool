@@ -1,6 +1,6 @@
 [tools]
 committed = "1.1.7"
-dprint = "0.50.0"
+dprint = "0.50.1"
 lefthook = "latest"
 shellcheck = "0.10.0"
 shfmt = "3.11.0"
