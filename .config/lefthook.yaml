@@ -12,7 +12,7 @@ pre-commit:
             group:
               jobs:
                 - name: shfmt
-                  run: mise exec -- shfmt --write --simplify {staged_files}
+                  run: mise exec -- shfmt --write {staged_files}
                 - name: shellcheck
                   run: mise exec -- shellcheck --format=gcc {staged_files}
     - name: tool-made-changes

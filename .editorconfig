@@ -10,3 +10,4 @@ indent_size = 8
 indent_style = tab
 # shfmt
 shell_variant = posix
+simplify = true
