@@ -1,17 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:best-practices",
-    "github>kachick/renovate-config-dprint#1.3.0",
-    "github>kachick/renovate-config-dprint:self",
-    ":prConcurrentLimit20",
-    ":preserveSemverRanges",
-    ":semanticPrefixChore"
-  ],
-  "ignorePresets": [
-    ":dependencyDashboard",
-    ":semanticPrefixFixDepsChoreOthers"
-  ],
-  "semanticCommits": "enabled",
-  "commitMessageTopic": "{{depName}}"
+    "github>scop/common"
+  ]
 }
