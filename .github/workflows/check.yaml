@@ -24,5 +24,4 @@ jobs:
       - name: Check code
         env:
           FORCE_COLOR: true
-          LEFTHOOK_QUIET: meta,execution
         run: lefthook run pre-commit --all-files --force --no-tty
