@@ -1,5 +1,5 @@
 [tools]
-committed = "1.1.7"
+committed = "1.1.8"
 dprint = "0.50.2"
 lefthook = "latest"
 shellcheck = "0.11.0"
