@@ -1,22 +1,22 @@
-name: Main push and PR checks
+name: Lint commits
 
 on:
   pull_request:
-  push:
-    branches:
-      - main
 
 permissions: {}
 
 jobs:
-  test:
+  lint-commits:
+    name: Lint commits
     runs-on: ubuntu-latest
+    env:
+      FORCE_COLOR: true
     permissions:
       contents: read
     steps:
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
       - uses: jdx/mise-action@146a28175021df8ca24f8ee1828cc2a60f980bd5 # v3.5.1
-      - name: Check code
-        env:
-          FORCE_COLOR: true
-        run: lefthook run pre-commit --all-files --force --no-tty
+      - run: lefthook run commit-msgs-on-pr-branch --no-tty
