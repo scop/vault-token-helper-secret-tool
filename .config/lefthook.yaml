@@ -11,7 +11,7 @@ pre-commit:
             glob: "*.{json,jsonc,md,yaml}"
             run: mise exec -- dprint fmt {staged_files}
           - name: shell-tools
-            glob: vault-token-helper-secret-tool
+            file_types: text/x-shellscript
             group:
               jobs:
                 - name: shfmt
