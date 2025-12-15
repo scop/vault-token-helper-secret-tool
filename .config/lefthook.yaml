@@ -1,4 +1,7 @@
+min_version: 2.0.3
+
 pre-commit:
+  fail_on_changes: non-ci
   jobs:
     - name: tools
       group:
@@ -15,16 +18,6 @@ pre-commit:
                   run: mise exec -- shfmt --write {staged_files}
                 - name: shellcheck
                   run: mise exec -- shellcheck --format=gcc {staged_files}
-    - name: tool-made-changes
-      run: |-
-        if test -n "${CI-}"; then
-          git diff --exit-code {staged_files}
-        else
-          git diff --quiet {staged_files}
-        fi
-        rc=$?
-        test $rc -eq 0 || echo "error: found files modified by tools" >&2
-        exit $rc
 
 commit-msg:
   commands:
