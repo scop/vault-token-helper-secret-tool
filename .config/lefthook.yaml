@@ -22,9 +22,9 @@ pre-commit:
 commit-msg:
   commands:
     committed:
-      run: mise exec -- committed --config .config/committed.toml --fixup --wip --commit-file "{1}"
+      run: mise exec -- committed --config=.config/committed.toml --fixup --wip --commit-file="{1}"
 
 commits-on-pr-branch:
   commands:
     committed:
-      run: mise exec -- committed --config .config/committed.toml -vv --no-merge-commit HEAD~..HEAD^2
+      run: mise exec -- committed --config=.config/committed.toml -vv --no-merge-commit HEAD~..HEAD^2
