@@ -19,4 +19,4 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - uses: jdx/mise-action@146a28175021df8ca24f8ee1828cc2a60f980bd5 # v3.5.1
-      - run: lefthook run commit-msgs-on-pr-branch --no-tty
+      - run: lefthook run commits-on-pr-branch --no-tty
