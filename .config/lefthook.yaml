@@ -9,15 +9,15 @@ pre-commit:
         jobs:
           - name: dprint
             glob: "*.{json,jsonc,md,yaml}"
-            run: mise exec -- dprint fmt {staged_files}
+            run: mise exec -- dprint fmt -- {staged_files}
           - name: shell-tools
             file_types: text/x-shellscript
             group:
               jobs:
                 - name: shfmt
-                  run: mise exec -- shfmt --write {staged_files}
+                  run: mise exec -- shfmt --write -- {staged_files}
                 - name: shellcheck
-                  run: mise exec -- shellcheck --format=gcc {staged_files}
+                  run: mise exec -- shellcheck --format=gcc -- {staged_files}
 
 commit-msg:
   commands:
