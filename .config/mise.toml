@@ -2,5 +2,7 @@
 committed = "1.1.10"
 dprint = "0.51.1"
 lefthook = "latest"
+rumdl = "0.0.215"
 shellcheck = "0.11.0"
 shfmt = "3.12.0"
+typos = "1.42.1"

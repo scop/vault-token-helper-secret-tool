@@ -1,30 +1,5 @@
-min_version: 2.0.3
-
-pre-commit:
-  fail_on_changes: non-ci
-  jobs:
-    - name: tools
-      group:
-        parallel: true
-        jobs:
-          - name: dprint
-            glob: "*.{json,jsonc,md,yaml}"
-            run: mise exec -- dprint fmt -- {staged_files}
-          - name: shell-tools
-            file_types: text/x-shellscript
-            group:
-              jobs:
-                - name: shfmt
-                  run: mise exec -- shfmt --write -- {staged_files}
-                - name: shellcheck
-                  run: mise exec -- shellcheck --format=gcc -- {staged_files}
-
-commit-msg:
-  commands:
-    committed:
-      run: mise exec -- committed --config=.config/committed.toml --fixup --wip --commit-file="{1}"
-
-commits-on-pr-branch:
-  commands:
-    committed:
-      run: mise exec -- committed --config=.config/committed.toml -vv --no-merge-commit HEAD~..HEAD^2
+remotes:
+  - git_url: https://github.com/scop/common.git
+    refetch_frequency: 24h
+    configs:
+      - lefthook/all.yaml
