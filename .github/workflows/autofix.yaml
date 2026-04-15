@@ -15,7 +15,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: scop/common/force-color@main
+      - uses: scop/common/force-color@08f8a44771add9537499e9325dca0fe1479c2480 # main
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151 # v4.0.1
       - run: lefthook run pre-commit --all-files --no-tty
