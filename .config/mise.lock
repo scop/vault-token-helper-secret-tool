@@ -7,22 +7,27 @@ backend = "aqua:crate-ci/committed"
 [tools.committed."platforms.linux-x64"]
 checksum = "sha256:1e5c20049eeaa4633e6798283913f92dc90a97f2b5c6dfc28e8c4b7e77a67157"
 url = "https://github.com/crate-ci/committed/releases/download/v1.1.11/committed-v1.1.11-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/committed/releases/assets/361544963"
 
 [tools.committed."platforms.linux-x64-musl"]
 checksum = "sha256:1e5c20049eeaa4633e6798283913f92dc90a97f2b5c6dfc28e8c4b7e77a67157"
 url = "https://github.com/crate-ci/committed/releases/download/v1.1.11/committed-v1.1.11-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/committed/releases/assets/361544963"
 
 [tools.committed."platforms.macos-arm64"]
 checksum = "sha256:b1718d951c8a90539ffb7a81145fdadf81c6c9a1f17560be433a74c5b3f7bfca"
 url = "https://github.com/crate-ci/committed/releases/download/v1.1.11/committed-v1.1.11-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/committed/releases/assets/361544941"
 
 [tools.committed."platforms.macos-x64"]
 checksum = "sha256:b1718d951c8a90539ffb7a81145fdadf81c6c9a1f17560be433a74c5b3f7bfca"
 url = "https://github.com/crate-ci/committed/releases/download/v1.1.11/committed-v1.1.11-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/committed/releases/assets/361544941"
 
 [tools.committed."platforms.windows-x64"]
 checksum = "sha256:af4f5a65320471751ed1dfbb5502f15f4857cea797b077c6049acb2b995d293b"
 url = "https://github.com/crate-ci/committed/releases/download/v1.1.11/committed-v1.1.11-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/crate-ci/committed/releases/assets/361545840"
 
 [[tools.dprint]]
 version = "0.55.1"
@@ -70,36 +75,43 @@ backend = "aqua:evilmartians/lefthook"
 [tools.lefthook."platforms.linux-arm64"]
 checksum = "sha256:f85cc031da8e3571418170ab53f1e6e184a086b58683e13660bd5248974159a4"
 url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.6/lefthook_2.1.6_Linux_aarch64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/397603572"
 provenance = "github-attestations"
 
 [tools.lefthook."platforms.linux-arm64-musl"]
 checksum = "sha256:f85cc031da8e3571418170ab53f1e6e184a086b58683e13660bd5248974159a4"
 url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.6/lefthook_2.1.6_Linux_aarch64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/397603572"
 provenance = "github-attestations"
 
 [tools.lefthook."platforms.linux-x64"]
 checksum = "sha256:fab3d2715a922d9625c9024e6ffb6e1271edd613aa9b213c2049482cde8ae183"
 url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.6/lefthook_2.1.6_Linux_x86_64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/397603518"
 provenance = "github-attestations"
 
 [tools.lefthook."platforms.linux-x64-musl"]
 checksum = "sha256:fab3d2715a922d9625c9024e6ffb6e1271edd613aa9b213c2049482cde8ae183"
 url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.6/lefthook_2.1.6_Linux_x86_64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/397603518"
 provenance = "github-attestations"
 
 [tools.lefthook."platforms.macos-arm64"]
 checksum = "sha256:f07c97c32376749edb5b34179c16c6d87dd3e7ca0040aee911f38c821de0daab"
 url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.6/lefthook_2.1.6_MacOS_arm64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/397603541"
 provenance = "github-attestations"
 
 [tools.lefthook."platforms.macos-x64"]
 checksum = "sha256:93c6d51823f94a7f26a2bbb84f59504378b178f55d6c90744169693ed3e89013"
 url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.6/lefthook_2.1.6_MacOS_x86_64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/397603530"
 provenance = "github-attestations"
 
 [tools.lefthook."platforms.windows-x64"]
 checksum = "sha256:6704b01a72414affcc921740a7d6c621fe60c3082b291c9730900a2c6a352516"
 url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.6/lefthook_2.1.6_Windows_x86_64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/397603542"
 provenance = "github-attestations"
 
 [[tools.rumdl]]
@@ -109,36 +121,43 @@ backend = "aqua:rvben/rumdl"
 [tools.rumdl."platforms.linux-arm64"]
 checksum = "sha256:e2040e1f2568226730b08175f6cc647c4d4c350d1475333db4595f55e42ea24c"
 url = "https://github.com/rvben/rumdl/releases/download/v0.1.81/rumdl-v0.1.81-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/rvben/rumdl/releases/assets/404833177"
 provenance = "github-attestations"
 
 [tools.rumdl."platforms.linux-arm64-musl"]
 checksum = "sha256:e2040e1f2568226730b08175f6cc647c4d4c350d1475333db4595f55e42ea24c"
 url = "https://github.com/rvben/rumdl/releases/download/v0.1.81/rumdl-v0.1.81-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/rvben/rumdl/releases/assets/404833177"
 provenance = "github-attestations"
 
 [tools.rumdl."platforms.linux-x64"]
 checksum = "sha256:08116daeed4a115290515ca867ef7532cb31889f26cc9e1aae8ee7abd9f1fff7"
 url = "https://github.com/rvben/rumdl/releases/download/v0.1.81/rumdl-v0.1.81-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/rvben/rumdl/releases/assets/404833176"
 provenance = "github-attestations"
 
 [tools.rumdl."platforms.linux-x64-musl"]
 checksum = "sha256:08116daeed4a115290515ca867ef7532cb31889f26cc9e1aae8ee7abd9f1fff7"
 url = "https://github.com/rvben/rumdl/releases/download/v0.1.81/rumdl-v0.1.81-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/rvben/rumdl/releases/assets/404833176"
 provenance = "github-attestations"
 
 [tools.rumdl."platforms.macos-arm64"]
 checksum = "sha256:d9eaa7222fea9e2073e42e1070bb59686d35889bb811098ada0994864b798c68"
 url = "https://github.com/rvben/rumdl/releases/download/v0.1.81/rumdl-v0.1.81-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/rvben/rumdl/releases/assets/404833178"
 provenance = "github-attestations"
 
 [tools.rumdl."platforms.macos-x64"]
 checksum = "sha256:887f51ce0dcb67101436c78d1c83275ccfb17add7147e70484829358e7abd02d"
 url = "https://github.com/rvben/rumdl/releases/download/v0.1.81/rumdl-v0.1.81-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/rvben/rumdl/releases/assets/404833179"
 provenance = "github-attestations"
 
 [tools.rumdl."platforms.windows-x64"]
 checksum = "sha256:1271b36a2e204ba438063ad45bc74ac863d074f74d0bb66e34d7c8e453cfe1a0"
 url = "https://github.com/rvben/rumdl/releases/download/v0.1.81/rumdl-v0.1.81-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/rvben/rumdl/releases/assets/404833185"
 provenance = "github-attestations"
 
 [[tools.shellcheck]]
@@ -148,30 +167,37 @@ backend = "aqua:koalaman/shellcheck"
 [tools.shellcheck."platforms.linux-arm64"]
 checksum = "sha256:12b331c1d2db6b9eb13cfca64306b1b157a86eb69db83023e261eaa7e7c14588"
 url = "https://github.com/koalaman/shellcheck/releases/download/v0.11.0/shellcheck-v0.11.0.linux.aarch64.tar.xz"
+url_api = "https://api.github.com/repos/koalaman/shellcheck/releases/assets/279056934"
 
 [tools.shellcheck."platforms.linux-arm64-musl"]
 checksum = "sha256:12b331c1d2db6b9eb13cfca64306b1b157a86eb69db83023e261eaa7e7c14588"
 url = "https://github.com/koalaman/shellcheck/releases/download/v0.11.0/shellcheck-v0.11.0.linux.aarch64.tar.xz"
+url_api = "https://api.github.com/repos/koalaman/shellcheck/releases/assets/279056934"
 
 [tools.shellcheck."platforms.linux-x64"]
 checksum = "sha256:8c3be12b05d5c177a04c29e3c78ce89ac86f1595681cab149b65b97c4e227198"
 url = "https://github.com/koalaman/shellcheck/releases/download/v0.11.0/shellcheck-v0.11.0.linux.x86_64.tar.xz"
+url_api = "https://api.github.com/repos/koalaman/shellcheck/releases/assets/279056942"
 
 [tools.shellcheck."platforms.linux-x64-musl"]
 checksum = "sha256:8c3be12b05d5c177a04c29e3c78ce89ac86f1595681cab149b65b97c4e227198"
 url = "https://github.com/koalaman/shellcheck/releases/download/v0.11.0/shellcheck-v0.11.0.linux.x86_64.tar.xz"
+url_api = "https://api.github.com/repos/koalaman/shellcheck/releases/assets/279056942"
 
 [tools.shellcheck."platforms.macos-arm64"]
 checksum = "sha256:56affdd8de5527894dca6dc3d7e0a99a873b0f004d7aabc30ae407d3f48b0a79"
 url = "https://github.com/koalaman/shellcheck/releases/download/v0.11.0/shellcheck-v0.11.0.darwin.aarch64.tar.xz"
+url_api = "https://api.github.com/repos/koalaman/shellcheck/releases/assets/279056932"
 
 [tools.shellcheck."platforms.macos-x64"]
 checksum = "sha256:3c89db4edcab7cf1c27bff178882e0f6f27f7afdf54e859fa041fca10febe4c6"
 url = "https://github.com/koalaman/shellcheck/releases/download/v0.11.0/shellcheck-v0.11.0.darwin.x86_64.tar.xz"
+url_api = "https://api.github.com/repos/koalaman/shellcheck/releases/assets/279056930"
 
 [tools.shellcheck."platforms.windows-x64"]
 checksum = "sha256:8a4e35ab0b331c85d73567b12f2a444df187f483e5079ceffa6bda1faa2e740e"
 url = "https://github.com/koalaman/shellcheck/releases/download/v0.11.0/shellcheck-v0.11.0.zip"
+url_api = "https://api.github.com/repos/koalaman/shellcheck/releases/assets/279056944"
 
 [[tools.shfmt]]
 version = "3.13.1"
@@ -180,30 +206,37 @@ backend = "aqua:mvdan/sh"
 [tools.shfmt."platforms.linux-arm64"]
 checksum = "sha256:32d92acaa5cd8abb29fc49dac123dc412442d5713967819d8af2c29f1b3857c7"
 url = "https://github.com/mvdan/sh/releases/download/v3.13.1/shfmt_v3.13.1_linux_arm64"
+url_api = "https://api.github.com/repos/mvdan/sh/releases/assets/390322859"
 
 [tools.shfmt."platforms.linux-arm64-musl"]
 checksum = "sha256:32d92acaa5cd8abb29fc49dac123dc412442d5713967819d8af2c29f1b3857c7"
 url = "https://github.com/mvdan/sh/releases/download/v3.13.1/shfmt_v3.13.1_linux_arm64"
+url_api = "https://api.github.com/repos/mvdan/sh/releases/assets/390322859"
 
 [tools.shfmt."platforms.linux-x64"]
 checksum = "sha256:fb096c5d1ac6beabbdbaa2874d025badb03ee07929f0c9ff67563ce8c75398b1"
 url = "https://github.com/mvdan/sh/releases/download/v3.13.1/shfmt_v3.13.1_linux_amd64"
+url_api = "https://api.github.com/repos/mvdan/sh/releases/assets/390322866"
 
 [tools.shfmt."platforms.linux-x64-musl"]
 checksum = "sha256:fb096c5d1ac6beabbdbaa2874d025badb03ee07929f0c9ff67563ce8c75398b1"
 url = "https://github.com/mvdan/sh/releases/download/v3.13.1/shfmt_v3.13.1_linux_amd64"
+url_api = "https://api.github.com/repos/mvdan/sh/releases/assets/390322866"
 
 [tools.shfmt."platforms.macos-arm64"]
 checksum = "sha256:9680526be4a66ea1ffe988ed08af58e1400fe1e4f4aef5bd88b20bb9b3da33f8"
 url = "https://github.com/mvdan/sh/releases/download/v3.13.1/shfmt_v3.13.1_darwin_arm64"
+url_api = "https://api.github.com/repos/mvdan/sh/releases/assets/390322881"
 
 [tools.shfmt."platforms.macos-x64"]
 checksum = "sha256:6feedafc72915794163114f512348e2437d080d0047ef8b8fa2ec63b575f12af"
 url = "https://github.com/mvdan/sh/releases/download/v3.13.1/shfmt_v3.13.1_darwin_amd64"
+url_api = "https://api.github.com/repos/mvdan/sh/releases/assets/390322886"
 
 [tools.shfmt."platforms.windows-x64"]
 checksum = "sha256:60cd368533d0ad73fa86d93d5bbf95ef40587245ce684ed138c1b31557b5fe97"
 url = "https://github.com/mvdan/sh/releases/download/v3.13.1/shfmt_v3.13.1_windows_amd64.exe"
+url_api = "https://api.github.com/repos/mvdan/sh/releases/assets/390322844"
 
 [[tools.typos]]
 version = "1.46.0"
@@ -212,27 +245,34 @@ backend = "aqua:crate-ci/typos"
 [tools.typos."platforms.linux-arm64"]
 checksum = "sha256:1f8324d5b17c7354c4a83865007efb55c8278ef4cc22bed748df6b92ca439384"
 url = "https://github.com/crate-ci/typos/releases/download/v1.46.0/typos-v1.46.0-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/409192090"
 
 [tools.typos."platforms.linux-arm64-musl"]
 checksum = "sha256:1f8324d5b17c7354c4a83865007efb55c8278ef4cc22bed748df6b92ca439384"
 url = "https://github.com/crate-ci/typos/releases/download/v1.46.0/typos-v1.46.0-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/409192090"
 
 [tools.typos."platforms.linux-x64"]
 checksum = "sha256:c62a626df385c96574743fd4974aeb271a41a67d080a0398e36e1a42782f614a"
 url = "https://github.com/crate-ci/typos/releases/download/v1.46.0/typos-v1.46.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/409192507"
 
 [tools.typos."platforms.linux-x64-musl"]
 checksum = "sha256:c62a626df385c96574743fd4974aeb271a41a67d080a0398e36e1a42782f614a"
 url = "https://github.com/crate-ci/typos/releases/download/v1.46.0/typos-v1.46.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/409192507"
 
 [tools.typos."platforms.macos-arm64"]
 checksum = "sha256:322f90609f951bc27e204cf8d0370702510ae99e87285b217916fb2c09d76111"
 url = "https://github.com/crate-ci/typos/releases/download/v1.46.0/typos-v1.46.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/409192721"
 
 [tools.typos."platforms.macos-x64"]
 checksum = "sha256:ca0bba6c8a80b4981951dbc3519987d51ef3a60e0b0a462db005ad99de47b40d"
 url = "https://github.com/crate-ci/typos/releases/download/v1.46.0/typos-v1.46.0-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/409193909"
 
 [tools.typos."platforms.windows-x64"]
 checksum = "sha256:a95e17043bdc0b890936e0213f7a533f4ccdf5430bb7c4a26984de8c77238536"
 url = "https://github.com/crate-ci/typos/releases/download/v1.46.0/typos-v1.46.0-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/crate-ci/typos/releases/assets/409193222"
