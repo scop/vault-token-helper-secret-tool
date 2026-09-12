@@ -30,43 +30,43 @@ url = "https://github.com/crate-ci/committed/releases/download/v1.1.11/committed
 url_api = "https://api.github.com/repos/crate-ci/committed/releases/assets/361545840"
 
 [[tools.dprint]]
-version = "0.55.2"
+version = "0.57.3"
 backend = "aqua:dprint/dprint"
 
 [tools.dprint."platforms.linux-arm64"]
-checksum = "sha256:f0101217dd0abc94f1ac01b83d306d0288aeee8a501e8614a5e2bbe037500be0"
-url = "https://github.com/dprint/dprint/releases/download/0.55.2/dprint-aarch64-unknown-linux-musl.zip"
-url_api = "https://api.github.com/repos/dprint/dprint/releases/assets/477041358"
+checksum = "sha256:514d3bcaa2e13b61f2c66f877924d223409e0f0ab992c937bc9921bbd57f111b"
+url = "https://github.com/dprint/dprint/releases/download/0.57.3/dprint-aarch64-unknown-linux-gnu.zip"
+url_api = "https://api.github.com/repos/dprint/dprint/releases/assets/546243436"
 
 [tools.dprint."platforms.linux-arm64-musl"]
-checksum = "sha256:f0101217dd0abc94f1ac01b83d306d0288aeee8a501e8614a5e2bbe037500be0"
-url = "https://github.com/dprint/dprint/releases/download/0.55.2/dprint-aarch64-unknown-linux-musl.zip"
-url_api = "https://api.github.com/repos/dprint/dprint/releases/assets/477041358"
+checksum = "sha256:f077da91d84cf0c307431fb95ed4eeeeaa38cde039a0251097991920c1f55d63"
+url = "https://github.com/dprint/dprint/releases/download/0.57.3/dprint-aarch64-unknown-linux-musl.zip"
+url_api = "https://api.github.com/repos/dprint/dprint/releases/assets/546243432"
 
 [tools.dprint."platforms.linux-x64"]
-checksum = "sha256:45fc0eef3216af21c4c22c6e7e233aa45c3080fac07b6e94db7008a5c8e5c67a"
-url = "https://github.com/dprint/dprint/releases/download/0.55.2/dprint-x86_64-unknown-linux-musl.zip"
-url_api = "https://api.github.com/repos/dprint/dprint/releases/assets/477041351"
+checksum = "sha256:473e15c20375762d109113b914d4f9daeaf38547f43553053a641726fb2dc29b"
+url = "https://github.com/dprint/dprint/releases/download/0.57.3/dprint-x86_64-unknown-linux-gnu.zip"
+url_api = "https://api.github.com/repos/dprint/dprint/releases/assets/546243423"
 
 [tools.dprint."platforms.linux-x64-musl"]
-checksum = "sha256:45fc0eef3216af21c4c22c6e7e233aa45c3080fac07b6e94db7008a5c8e5c67a"
-url = "https://github.com/dprint/dprint/releases/download/0.55.2/dprint-x86_64-unknown-linux-musl.zip"
-url_api = "https://api.github.com/repos/dprint/dprint/releases/assets/477041351"
+checksum = "sha256:e361513ede569f5da8164d036146578b0c50e232452ebe0c2c00f38ffc6ba4f1"
+url = "https://github.com/dprint/dprint/releases/download/0.57.3/dprint-x86_64-unknown-linux-musl.zip"
+url_api = "https://api.github.com/repos/dprint/dprint/releases/assets/546243425"
 
 [tools.dprint."platforms.macos-arm64"]
-checksum = "sha256:e9ba8ed7988f3350501a8cf8af92da616cdec8d9d5c831c069293c587311b49d"
-url = "https://github.com/dprint/dprint/releases/download/0.55.2/dprint-aarch64-apple-darwin.zip"
-url_api = "https://api.github.com/repos/dprint/dprint/releases/assets/477041350"
+checksum = "sha256:72bf6537685d3d27fc572bbb77ce07e43f481de7c1422b5fcc2fe9484894dd53"
+url = "https://github.com/dprint/dprint/releases/download/0.57.3/dprint-aarch64-apple-darwin.zip"
+url_api = "https://api.github.com/repos/dprint/dprint/releases/assets/546243440"
 
 [tools.dprint."platforms.macos-x64"]
-checksum = "sha256:b7074cf6c814f995b783b5baa7e516b34e783c42c9baf7af553dbad731adb3a7"
-url = "https://github.com/dprint/dprint/releases/download/0.55.2/dprint-x86_64-apple-darwin.zip"
-url_api = "https://api.github.com/repos/dprint/dprint/releases/assets/477041364"
+checksum = "sha256:a17ac9a99c8d27800599e7362887a75e36a46204eb874bf1819c74aad473427c"
+url = "https://github.com/dprint/dprint/releases/download/0.57.3/dprint-x86_64-apple-darwin.zip"
+url_api = "https://api.github.com/repos/dprint/dprint/releases/assets/546243420"
 
 [tools.dprint."platforms.windows-x64"]
-checksum = "sha256:12e8c26abc8c436223e70f5a30a2864001c92fa356a859eb93e06b97ab7dbd12"
-url = "https://github.com/dprint/dprint/releases/download/0.55.2/dprint-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/dprint/dprint/releases/assets/477041355"
+checksum = "sha256:29b8e320968776917f5ffbd4bbbc8c48b266b0b74d868672ef30d51d773000c0"
+url = "https://github.com/dprint/dprint/releases/download/0.57.3/dprint-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/dprint/dprint/releases/assets/546243421"
 
 [[tools.lefthook]]
 version = "2.1.6"
