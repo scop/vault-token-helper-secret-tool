@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: scop/common/force-color@main
+      - uses: scop/common/force-color@cac1b7f8f5af6c44ce1d7be501b121fec07c701e # main
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
