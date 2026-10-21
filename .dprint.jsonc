@@ -1,6 +1,6 @@
 {
   "plugins": [
-    "npm:@dprint/json@0.24.0",
+    "npm:@dprint/json@0.25.2",
     "npm:@dprint/toml@0.8.0",
     "npm:dprint-plugin-yaml@0.6.0",
     "https://plugins.dprint.dev/scop/shebang-0.0.1.wasm",
