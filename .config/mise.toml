@@ -3,7 +3,7 @@ lockfile_platforms = [] # all here even if reduced global set locally
 
 [tools]
 committed = "1.1.12"
-dprint = "0.64.3"
+dprint = "0.65.0"
 lefthook = "latest"
 rumdl = "v0.2.26"
 shellcheck = "0.11.0"
